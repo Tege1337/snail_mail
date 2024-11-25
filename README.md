@@ -1,4 +1,4 @@
-# Story
+<!-- # Story
 - Your friend recently started an e-commerce business where people can buy little animals like reptilians, snakes, and snails. You have created a basic webshop for the startup.
 
 - Before any purchase the customers need to create an account. Unfortunately, 10% of the users give invalid email addresses on the form, and they cannot be reached again. It's your job to fix this problem, and write a basic email validator for the registration page.
@@ -29,37 +29,37 @@ The validator should give an error when the username is empty.
 #### 4. Domain is not empty
 The validator should give an error when the domain is empty.
 
-- Writing the email hello@, the program prints The domain after the '@' character cannot be empty!
+- Writing the email hello@, the program prints The domain after the '@' character cannot be empty! -->
 
-#### 5. At least one '.'
+<!-- #### 5. At least one '.'
 The validator should give an error when there are no . characters in the email address.
 
-- Writing the email hello@@worldcom, the program prints An email address has to contain at least one '.' character!
-
+- Writing the email hello@@worldcom, the program prints An email address has to contain at least one '.' character! -->
+<!-- 
 #### 6. At least one '.' in domain
 The validator should give an error when there are no . characters in the domain.
 
-- Writing the email hell.o@@worldcom, the program prints The domain has to contain at least one '.' character!
+- Writing the email hell.o@@worldcom, the program prints The domain has to contain at least one '.' character! -->
 
-#### 7. Top-level domain is not empty
+<!-- #### 7. Top-level domain is not empty
 The validator should give an error when the domain ends with a . character.
 
-- Writing the email hello@@worldcom., the program prints The top-level domain cannot be empty!
-
+- Writing the email hello@@worldcom., the program prints The top-level domain cannot be empty! -->
+<!-- 
 #### 8. TLD is at least two characters long
 The validator should give an error when the last part of the domain is less than two characters long.
 
-- Writing the email hello@@worldco.m, the program prints The top-level domain has to be at least two characters long!
+- Writing the email hello@@worldco.m, the program prints The top-level domain has to be at least two characters long! -->
 
-#### 9. Valid username
+<!-- #### 9. Valid username
 The validator should give an error when the username starts with a . character.
 
-- Writing the email .hello@@world.com, the program prints The username cannot start with a '.' character!
+- Writing the email .hello@@world.com, the program prints The username cannot start with a '.' character! -->
 
-#### 10. Valid server name
+<!-- #### 10. Valid server name
 The validator should give an error when the first part of the domain is empty.
 
-- Writing the email he.llo@.world.com, the program prints The domain cannot start with a '.' character!
+- Writing the email he.llo@.world.com, the program prints The domain cannot start with a '.' character! -->
 
 #### 11. Valid email address
 The validator should recognize a valid email address.

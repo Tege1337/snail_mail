@@ -35,4 +35,59 @@ error_message_no_domain = "The domain after the '@' character cannot be empty!"
 error_message_invalid_username = "The username cannot start with a '.' character!"
 
 ok_message = "Valid email address :)"
-is_valid = True
+is_valid = False
+
+# 1. Task
+
+if "@" not in email:
+    print(error_message_no_at)
+
+# 2. Task
+
+for x in email:
+    if email.count("@") > 1:
+        print(error_message_too_many_at)
+
+# 3. Task
+
+if position_of_at == 0:
+    print(error_message_no_username)
+
+# 4. Task
+
+if email[-1] == "@":
+    print(error_message_no_domain)
+
+# 5. Task
+
+if number_of_dot_characters == 0:
+    print(error_message_no_dot)
+
+# 6. Task
+
+if "." not in email[position_of_last_dot]:
+    print(error_message_no_dot_in_domain)
+
+# 7. Task
+
+if email.endswith("."):
+    print(error_message_no_tld)
+
+# 8. Task
+
+if len(email[position_of_last_dot + 1:]) < 2:
+    print(error_message_short_tld)
+
+# 9. Task
+
+if email[0] == ".":
+    print(error_message_invalid_username)
+
+# 10. Task
+
+if position_of_first_dot_after_the_at == position_of_at + 1:
+    print(error_message_no_server_name)
+
+else:
+    is_valid = True
+    print(ok_message)
